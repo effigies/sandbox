@@ -7,7 +7,10 @@ import numpy as np
 import scipy as sp
 import scipy.stats
 import nibabel as nib
-import mne
+try:
+    import mne
+except ImportError:
+    pass
 
 
 def mean_images(overlays):
